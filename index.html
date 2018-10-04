@@ -35,9 +35,9 @@
         <td>{{region}}</td>
         <td>{{typeApp}}</td>
         <td>
-            <button onclick="linkClick(this, '{{ ticketUrl }}')">Copy text</button>
+            <button onclick="linkClick(this, '{{ ticketUrl }}')">Copy text & download file</button>
             <input type="text" value="{{name}}" /> 
-            <a target="_blank" href="{{ ticketUrl }}">Download</a>       
+            <a target="_blank" href="{{ ticketUrl }}" class="hide">Download</a>       
         </td>
     </tr>
     {{/each}}    

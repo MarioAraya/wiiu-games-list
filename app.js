@@ -7,13 +7,13 @@
   document.getElementById("output").innerHTML = html
 
   linkClick = function(el, url){
+    el.nextElementSibling.select()
+    document.execCommand("copy");
+    
     var wnd = window.open(url);
     setTimeout(function() {
       wnd.close();
-      document.execCommand("paste");
     }, 3000);
-    el.nextElementSibling.select()
-    document.execCommand("copy");
     return false;
   } 
 })();
